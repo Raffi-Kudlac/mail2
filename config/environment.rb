@@ -5,7 +5,7 @@ require File.expand_path('../application', __FILE__)
 Mail2::Application.initialize!
 
 
-config.action_mailer.smtp_settings = {
+ActionMailer::Base.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 587,
   :domain               => "www.heroku.com",
@@ -13,8 +13,4 @@ config.action_mailer.smtp_settings = {
   :password             => "threshrules",
   :authentication       => :plain,
   :enable_starttls_auto => true
-}
-
-config.action_mailer.default_url_options = {
-  :host => "www.heroku.com"
 }
