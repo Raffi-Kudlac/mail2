@@ -2,8 +2,9 @@ Mail2::Application.routes.draw do
 
   #match '/contact' => 'contact#new', :via => :get
   #match '/contact' => 'contact#create', :via => :post
+  root to: 'contact#new'
   match '/contact' => 'contact#new',  :via => :get
-match '/contact' => 'contact#create', :via => :post
+  match '/contact' => 'contact#create', :via => :post
 
 
   # The priority is based upon order of creation: first created -> highest priority.
