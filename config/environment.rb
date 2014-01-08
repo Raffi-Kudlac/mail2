@@ -6,7 +6,7 @@ Mail2::Application.initialize!
 
 
 ActionMailer::Base.smtp_settings = {
-  :address              => "smtp.gmail.com",
+  :address              => 'smtp.sendgrid.net',
   :port                 => 587,
   :domain               => "www.heroku.com",
   :user_name            => "fakespam9989@gmail.com",
